@@ -52,6 +52,14 @@ if (isset($_POST['register_button'])) {
 	//Date
 	$date = date("Y-m-d"); //Current date
 
+	// Validation to check emails match
+	if ($em == $em2) {
+		# code...
+	}
+	else {
+		echo "Emails don't match!";
+	}
+
 }
 
 ?>
