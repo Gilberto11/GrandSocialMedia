@@ -8,6 +8,8 @@ if(mysqli_connect_errno()) {
 
 }
 
+$query = mysqli_query($con, "INSERT INTO test VALUES ('1', 'Snakes')");
+
 ?>
 
 <!DOCTYPE html>
