@@ -85,6 +85,18 @@ if (isset($_POST['register_button'])) {
 
 	}
 
+	if (strlen($fname) > 25 || strlen($fname) < 2) {
+		echo "Your first name must be between 2 and 25 characters long.";
+	}
+
+	if (strlen($lname) > 25 || strlen($lname) < 2) {
+		echo "Your last name must be between 2 and 25 characters long.";
+	}
+
+	if ($password != $password2) {
+		echo "Your passwords do not match.";
+	}
+
 }
 
 ?>
