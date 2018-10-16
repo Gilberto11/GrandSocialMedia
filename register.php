@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $con = mysqli_connect("localhost", "root", "", "grandsocialmedia"); //Connection variable
 
 if(mysqli_connect_errno()) {
