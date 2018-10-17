@@ -121,10 +121,23 @@ if (isset($_POST['register_button'])) {
 		$i = 0;
 		//If username exists add number to username
 		while (mysqli_num_rows($check_username_query) != 0) {
-			i++; //Add 1 to i
+			$i++; //Add 1 to i
 			$username = $username . "_" . $i;
 			$check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username = '$username'");
 		}
+
+		//Profile picture assignment
+		$rand = rand(1, 2); //Generate random number between 1 and 2
+
+		if ($rand == 1) {
+			$profile_pic = "assets/images/profile_pics/defaults/head_deep_blue";
+		}
+		elseif ($rand == 2) {
+			$profile_pic = "assets/images/profile_pics/defaults/head_emerald";
+		}
+
+		$query = mysqli_query($con, "INSERT INTO users VALUES ('', '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
+
 	}
 
 }
