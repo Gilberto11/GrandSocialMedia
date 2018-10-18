@@ -1,12 +1,5 @@
 <?php
-session_start();
-$con = mysqli_connect("localhost", "root", "", "grandsocialmedia"); //Connection variable
-
-if(mysqli_connect_errno()) {
-
-	echo "Failed to connect: " . mysqli_connect_errno();
-
-}
+require 'config/config.php';
 
 // Declaring variables to prevent errors
 $fname = ""; //First name
