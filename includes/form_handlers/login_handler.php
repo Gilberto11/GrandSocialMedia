@@ -19,6 +19,10 @@
 			exit();
 		}
 
+		else {
+			array_push($error_array, "Email or password was incorrect!<br>");
+		}
+
 	}
 
  ?>
