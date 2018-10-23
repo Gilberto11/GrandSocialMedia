@@ -1,14 +1,21 @@
-CREATE TABLE 'users' (
-  'id' int(11) NOT NULL,
-  'first_name' varchar(25) NOT NULL,
-  'last_name' varchar(25) NOT NULL,
-  'username' varchar(100) NOT NULL,
-  'email' varchar(100) NOT NULL,
-  'password' varchar(255) NOT NULL,
-  'signup_date' date NOT NULL,
-  'profile_pic' varchar(255) NOT NULL,
-  'num_posts' int(11) NOT NULL,
-  'num_likes' int(11) NOT NULL,
-  'user_closed' varchar(3) NOT NULL,
-  'friend_array' text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE DATABASE grandsocialmedia;
+
+USE grandsocialmedia;
+
+CREATE TABLE `grandsocialmedia`.`users` ( 
+`id` INT NOT NULL AUTO_INCREMENT , 
+`first_name` VARCHAR(25) NOT NULL , 
+`last_name` VARCHAR(25) NOT NULL , 
+`username` VARCHAR(100) NOT NULL , 
+`email` VARCHAR(100) NOT NULL , 
+`password` VARCHAR(255) NOT NULL , 
+`signup_date` DATE NOT NULL , 
+`profile_pic` VARCHAR(255) NOT NULL , 
+`num_posts` INT NOT NULL , 
+`num_likes` INT NOT NULL , 
+`user_closed` VARCHAR(3) NOT NULL , 
+`friend_array` TEXT NOT NULL , 
+PRIMARY KEY (`id`)
+) ENGINE = INNODB;
+
+SELECT * FROM users;
