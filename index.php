@@ -9,6 +9,6 @@ require 'config/config.php';
 	<title>Grand Social Media</title>
 </head>
 <body>
-	Hello Snakes!!!!!
+	Index Page
 </body>
 </html>
