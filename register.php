@@ -9,6 +9,7 @@ require 'includes/form_handlers/login_handler.php';
 <html>
 <head>
 	<title>Grand Social Media</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
 </head>
 <body>
 
