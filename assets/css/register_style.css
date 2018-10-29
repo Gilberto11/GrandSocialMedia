@@ -101,3 +101,7 @@ input[type="text"],input[type="email"],input[type="password"]{
 input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
 	border-color: #5758BB;
 }
+
+.second{
+	display: none;
+}
