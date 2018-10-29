@@ -11,6 +11,7 @@ require 'includes/form_handlers/login_handler.php';
 	<title>Grand Social Media</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="assets/js/register.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@ require 'includes/form_handlers/login_handler.php';
 			Login or Sign Up below
 		</div>
 
-			<div class="first">
+			<div id="first">
 
 				<form action="register.php" method="POST">
 					<input type="email" name="log_email" placeholder="Email Address" value="<?php
@@ -44,7 +45,7 @@ require 'includes/form_handlers/login_handler.php';
 			</div>
 
 
-			<div class="second">
+			<div id="second">
 				<form action="register.php" method="POST">
 					
 					<input type="text" name="reg_fname" placeholder="First Name" value="<?php
