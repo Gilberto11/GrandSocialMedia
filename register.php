@@ -31,10 +31,10 @@ require 'includes/form_handlers/login_handler.php';
 				<br>
 				<input type="password" name="log_password" placeholder="Password">
 				<br>
+				<?php if (in_array("Email or password was incorrect!<br>", $error_array)) echo "Email or password was incorrect!<br>"; ?>
 				<input type="submit" name="login_button" value="Login">
 				<br>
-
-				<?php if (in_array("Email or password was incorrect!<br>", $error_array)) echo "Email or password was incorrect!<br>"; ?>
+				<a href="#" id="signup" class="signup">Need an account? Register here</a>
 
 			</form>
 
@@ -86,6 +86,7 @@ require 'includes/form_handlers/login_handler.php';
 				<br>
 
 				<?php if (in_array("<span style = 'color: #14C800;'>You're all set! Go ahead and log in!</span><br>", $error_array)) echo "<span style = 'color: #14C800;'>You're all set! Go ahead and log in!</span><br>"; ?>
+				<a href="#" id="signin" class="signin">Already have an account? Sign in here</a>
 
 			</form>
 
