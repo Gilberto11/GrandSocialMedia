@@ -28,6 +28,11 @@ body {
 	height: 100%;
 }
 
+a{
+	text-decoration: none;
+	color: #5758BB;
+}
+
 .wrapper {
 	background-image: url("../images/backgrounds/crowd.jpg");
 	background-size: cover;
