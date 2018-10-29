@@ -17,7 +17,7 @@ require 'includes/form_handlers/login_handler.php';
 
 		<div class="login_box">
 
-			<div class = "login_hearder">
+			<div class = "login_header">
 			<h1> Grand Social Media!</h1>
 			Login or Sign Up below
 		</div>
