@@ -22,21 +22,25 @@ require 'includes/form_handlers/login_handler.php';
 			Login or Sign Up below
 		</div>
 
-			<form action="register.php" method="POST">
-				<input type="email" name="log_email" placeholder="Email Address" value="<?php
-					if(isset($_SESSION['log_email'])) {
-						echo $_SESSION['log_email'];
-					}
-				?>" required>
-				<br>
-				<input type="password" name="log_password" placeholder="Password">
-				<br>
-				<?php if (in_array("Email or password was incorrect!<br>", $error_array)) echo "Email or password was incorrect!<br>"; ?>
-				<input type="submit" name="login_button" value="Login">
-				<br>
-				<a href="#" id="signup" class="signup">Need an account? Register here</a>
+			<div class="first">
 
-			</form>
+				<form action="register.php" method="POST">
+					<input type="email" name="log_email" placeholder="Email Address" value="<?php
+						if(isset($_SESSION['log_email'])) {
+							echo $_SESSION['log_email'];
+						}
+					?>" required>
+					<br>
+					<input type="password" name="log_password" placeholder="Password">
+					<br>
+					<?php if (in_array("Email or password was incorrect!<br>", $error_array)) echo "Email or password was incorrect!<br>"; ?>
+					<input type="submit" name="login_button" value="Login">
+					<br>
+					<a href="#" id="signup" class="signup">Need an account? Register here</a>
+
+				</form>
+
+			</div>
 
 			<form action="register.php" method="POST">
 				
