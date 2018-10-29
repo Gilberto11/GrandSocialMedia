@@ -67,7 +67,8 @@ input[type="submit"]{
 	background-color: #5758BB;
 	border: 1px solid #5758BB;
 	border-radius: 3px;
-	
+	margin: 5px 0 10px 0;
+	padding: 5px 10px 5px 10px;
 }
 
 .login_header h1{
