@@ -83,3 +83,9 @@ input[type="submit"]{
 	font-family: 'Bellota-BoldItalic', sans serif;
 	font-size: 100%;
 }
+
+input[type="text"],input[type="email"],input[type="password"]{
+	border: 1px solid #e5e5e5;
+	margin-top: 5px;
+	width: 50%;
+}
