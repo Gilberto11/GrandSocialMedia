@@ -1,14 +1,7 @@
 <?php
-require 'config/config.php';
-
+include("includes/header.php");
+session_destroy();
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Grand Social Media</title>
-</head>
-<body>
 	Index Page
 </body>
 </html>
