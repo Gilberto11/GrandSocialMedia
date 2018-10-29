@@ -10,6 +10,7 @@ require 'includes/form_handlers/login_handler.php';
 <head>
 	<title>Grand Social Media</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
 
