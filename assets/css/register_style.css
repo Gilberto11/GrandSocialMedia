@@ -65,6 +65,9 @@ body {
 
 input[type="submit"]{
 	background-color: #5758BB;
+	border: 1px solid #5758BB;
+	border-radius: 3px;
+	
 }
 
 .login_header h1{
