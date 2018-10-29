@@ -14,6 +14,9 @@ require 'includes/form_handlers/login_handler.php';
 <body>
 
 	<div class="wrapper">
+		<div class = "login_hearder">
+			<h1> Grand Social Media!</h1>
+		</div>
 
 		<div class="login_box">
 
