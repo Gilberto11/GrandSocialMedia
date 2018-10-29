@@ -20,15 +20,36 @@ else{
 	<script src="assets/js/bootstrap.js"></script>
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href= "assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href= "assets/css/style.css"> 
 </head>
 <body>
 
   <div class="top_bar">
+
     <div class="logo">
       <a href="index.php">Grand Social Media!</a>
     </div>
+
+    <nav>
+      <a href="#">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-bell"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-users"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-cog"></i>
+      </a>
+    </nav>
+
   </div>
 
 <!-- Single button -->
