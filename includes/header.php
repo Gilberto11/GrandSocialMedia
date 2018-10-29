@@ -27,7 +27,7 @@ else{
 
   <div class="top_bar">
     <div class="logo">
-      <a href="index.php"></a>
+      <a href="index.php">Grand Social Media!</a>
     </div>
   </div>
 
