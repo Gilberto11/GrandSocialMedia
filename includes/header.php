@@ -14,8 +14,12 @@ else{
 <html>
 <head>
 	<title>Grand Social Media</title>
+
+  <!-- JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
+
+  <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href= "assets/css/bootstrap.css"> 
 </head>
 <body>
