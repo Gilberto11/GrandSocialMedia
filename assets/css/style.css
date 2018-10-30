@@ -76,3 +76,9 @@ nav a:hover {
 	z-index: -1;
 }
 
+.user_details {
+	width: 250px;
+	float: left;
+	margin-bottom: 20px;
+}
+
