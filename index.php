@@ -5,5 +5,8 @@ include("includes/header.php");
 		<a href="#"><img src= "<?php echo $user['profile_pic']?>"></a>
 
 	</div>
+
+
+	</div>
 </body>
 </html>
