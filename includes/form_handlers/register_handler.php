@@ -122,10 +122,10 @@ if (isset($_POST['register_button'])) {
 		$rand = rand(1, 2); //Generate random number between 1 and 2
 
 		if ($rand == 1) {
-			$profile_pic = "assets/images/profile_pics/defaults/head_deep_blue";
+			$profile_pic = "assets/images/profile_pic/defaults/head_deep_blue.png";
 		}
 		elseif ($rand == 2) {
-			$profile_pic = "assets/images/profile_pics/defaults/head_emerald";
+			$profile_pic = "assets/images/profile_pic/defaults/head_emerald.png";
 		}
 
 		$query = mysqli_query($con, "INSERT INTO users VALUES ('', '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
