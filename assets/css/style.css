@@ -10,6 +10,7 @@
 
 body {
 	line-height: 17px;
+	background-color: #a29bfe;
 }
 
 .top_bar {
@@ -20,6 +21,8 @@ body {
 	border-bottom: 0.25em solid #9980FA;
 	margin: 0 0 10px 0;
 	display: inline-flex;
+	position: fixed;
+	z-index: 10;
 }
 
 .logo a {
@@ -63,3 +66,13 @@ nav a:hover {
 	width: 75%;
 	min-width: 950px;
 }
+
+.column{
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #D3D3D3;
+	z-index: -1;
+}
+
