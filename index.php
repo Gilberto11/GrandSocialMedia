@@ -1,5 +1,6 @@
 <?php
 include("includes/header.php");
+include("includes/classes/User.php");
 ?>
 	<div class= "user_details column">
 		<a href="<?php echo $userLoggedIn; ?>"><img src= "<?php echo $user['profile_pic']?>"></a>
@@ -31,6 +32,15 @@ include("includes/header.php");
 			<hr>
 			
 		</form>
+
+		<?php
+
+		$user_obj = new User($con, $userLoggedIn);
+		echo $user_obj->getFirstAndLastName();
+
+		?>
+
+	</div>
 
 	</div>
 
