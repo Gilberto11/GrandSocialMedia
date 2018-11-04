@@ -31,4 +31,15 @@ CREATE TABLE `grandsocialmedia`.`posts` (
 PRIMARY KEY (`id`)
 ) ENGINE = INNODB;
 
+CREATE TABLE `grandsocialmedia`.`post_comments` ( 
+`id` INT NOT NULL AUTO_INCREMENT , 
+`post_body` TEXT, 
+`posted_by` VARCHAR(60) NOT NULL , 
+`posted_to` VARCHAR(60) NOT NULL , 
+`date_added` DATETIME NOT NULL ,  
+`removed` VARCHAR(3) NOT NULL , 
+`post_id` INT NOT NULL ,  
+PRIMARY KEY (`id`)
+) ENGINE = INNODB;
+
 SELECT * FROM users;
