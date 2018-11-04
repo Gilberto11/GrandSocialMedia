@@ -42,4 +42,11 @@ CREATE TABLE `grandsocialmedia`.`post_comments` (
 PRIMARY KEY (`id`)
 ) ENGINE = INNODB;
 
+CREATE TABLE `grandsocialmedia`.`likes` ( 
+`id` INT NOT NULL AUTO_INCREMENT , 
+`username` VARCHAR(60) NOT NULL ,
+`post_id` INT NOT NULL , 
+PRIMARY KEY (`id`)
+) ENGINE = INNODB;
+
 SELECT * FROM users;
