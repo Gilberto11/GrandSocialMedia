@@ -18,4 +18,17 @@ CREATE TABLE `grandsocialmedia`.`users` (
 PRIMARY KEY (`id`)
 ) ENGINE = INNODB;
 
+
+CREATE TABLE `grandsocialmedia`.`posts` ( 
+`id` INT NOT NULL AUTO_INCREMENT , 
+`body` TEXT, 
+`added_by` VARCHAR(60) NOT NULL , 
+`user_to` VARCHAR(60) NOT NULL , 
+`date_added` DATETIME NOT NULL , 
+`user_closed` VARCHAR(3) NOT NULL , 
+`deleted` VARCHAR(3) NOT NULL , 
+`likes` INT NOT NULL ,  
+PRIMARY KEY (`id`)
+) ENGINE = INNODB;
+
 SELECT * FROM users;
