@@ -42,14 +42,41 @@ include("includes/classes/Post.php");
 			
 		</form>
 
-		<?php
+		
 
-		$post = new Post($con, $userLoggedIn);
-		$post -> loadPostsFriends();
-
-		?>
+		<div class="posts_area"></div>
+		<img id="#loading" src="assets/images/icons/loading.gif">
 
 	</div>
+
+	<script>
+	var userLoggedIn = '<?php echo $userLoggedIn; ?>';
+
+	$(document).ready(function() {
+
+		$('#loading').show(); //this makes the loading icon appear
+
+		//Original ajax request for loading first post
+		$.ajax
+		({
+			url: "includes/handlers/ajax_load_posts.php",
+			type: "POST",
+			data: "page=1&userLoggedIn=" + userLoggedIn,
+			cache: false,
+
+			success: function(data) {
+				$('#loading').hide();
+				$('.posts_area').html(data);
+			}
+
+		});
+		
+
+
+
+	});
+
+	</script>
 
 	</div>
 
