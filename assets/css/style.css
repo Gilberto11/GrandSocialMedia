@@ -140,3 +140,10 @@ textarea:focus {
  padding: 5px 4px 4px 5px;
  color: red;
 }
+
+.status_post{
+	width: 96%;
+	font-size: 15px;
+	padding: 0px 5px;
+	min-height: 75px;
+}
