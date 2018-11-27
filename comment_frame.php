@@ -142,10 +142,12 @@ if ($count != 0) {
 
 ?>
 
-<div class="comment_section">
-	<a href="<?php echo $posted_by?>" target = "_parent"><img src="<?php echo $user_obj -> getProfilePic();?>"></a>
-</div>
-
+	<div class="comment_section">
+		<a href="<?php echo $posted_by?>" target = "_parent"><img src="<?php echo $user_obj -> getProfilePic();?>" title="<?php echo $posted_by; ?>" style="float:left;" height="30"></a>
+		<a href="<?php echo $posted_by?>" target="_parent"> <B><?php echo $user_obj->getFirstAndLastName(); ?> </B>b></a>
+		&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $time_message . "<br>" . $comment_body; ?>
+		<hr>
+	</div>
 
 
 </body>
