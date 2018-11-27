@@ -118,7 +118,9 @@ class Post {
 
                     ?>
 
-                    <script>
+
+
+                    <script>//show and hide comments on posts
                         function toggle<?php echo $id; ?>() {
                             var element = document.getElementById("toggleComment<?php echo $id; ?>");
 
@@ -210,7 +212,7 @@ class Post {
                                    </div>
 
                                    <div class='post_comment' id='toggleComment$id' style='display:none;'>
-                                   <iframe src='comment_frame.php?post_id=$id' id='comment_iframe'></iframe>
+                                   <iframe src='comment_frame.php?post_id=$id' id='comment_iframe' frameborder='0'></iframe>
                                    </div>
                                    <hr>";
 
