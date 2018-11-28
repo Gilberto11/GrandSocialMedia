@@ -21,7 +21,7 @@ else{
 
 ?>
 <script >
-	function toggle{
+	function toggle(){
 		var element = document.getElementById("comment_section");
 
 		if (element.style.display == "block")
