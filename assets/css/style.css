@@ -146,6 +146,7 @@ textarea:focus {
 	font-size: 15px;
 	padding: 0px 5px;
 	min-height: 75px;
+	cursor:pointer;
 }
 
 .post_profile_pic {
@@ -172,11 +173,22 @@ textarea:focus {
 	border-radius: 3px;
 }
 
-#comment_from{
+#comment_from text area{
 	width:85%;
 	height: 35px;
 	border-radius: 5px;
 	color:#616060;
 	font-size:14px;
 	margin: 3px 3px 3px 5px;
+}
+
+#comment_from input[type="submit"] {
+	border:none;
+	background-color: #20AAE5;
+	color: #156588;
+	border-radius: 5px;
+	width:13%;
+	height: 35px;
+	margin-top: 3px;
+	position: absolute;
 }
