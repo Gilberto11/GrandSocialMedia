@@ -13,6 +13,11 @@ body {
 	background-color: #a29bfe;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
 .top_bar {
 	width: 100%;
 	min-width: 1050px;
@@ -174,6 +179,7 @@ textarea:focus {
 }
 
 #comment_form textarea{
+	border-color: #D3D3D3;
 	width:85%;
 	height: 35px;
 	border-radius: 5px;
@@ -191,4 +197,6 @@ textarea:focus {
 	height: 35px;
 	margin-top: 3px;
 	position: absolute;
+	font-family: 'Bellota-BoldItalic', sans-serif;
+    text-shadow: #73B6E2 0.5px 0.5px 0px;
 }
