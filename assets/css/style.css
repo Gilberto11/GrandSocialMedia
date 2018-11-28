@@ -166,6 +166,7 @@ textarea:focus {
 #comment_iframe {
 	width: 100%;
     max-height: 250px;
+    margin-top: 5px;
 }
 
 .comment_section {
@@ -199,4 +200,11 @@ textarea:focus {
 	position: absolute;
 	font-family: 'Bellota-BoldItalic', sans-serif;
     text-shadow: #73B6E2 0.5px 0.5px 0px;
+}
+
+.newsfeedPostOptions{
+	padding: 0px;
+	text-decoration: none;
+	color: #000;
+	border:none;
 }
