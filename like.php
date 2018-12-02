@@ -33,6 +33,25 @@ $user_liked = $row['added_by'];
 $user_details_query = mysqli_query($con, "SELECT * FROM users WHERE username = '$user_liked'");
 $row = mysqli_fetch_array($user_details_query);
 
+//Like Button
+
+
+
+//Unlike Button
+
+
+//Check for previous likes
+$check_query = mysqli_query($con, "SELECT * FROM likes WHERE username = '$userLoggedIn' AND post_id = '$post_id'");
+$num_rows = mysqli_num_rows($check_query);
+
+if($num_rows > 0){
+	echo '';
+}
+else{
+	echo '';
+}
+
+
 ?>
 
 
