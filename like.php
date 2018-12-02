@@ -20,6 +20,12 @@ else{
     header("location: register.php");
 }
 
+//get id of post
+if(isset($_GET['post_id'])) {
+	$post_id = $_GET['post_id'];
+}
 ?>
+
+
 </body>
 </html>
