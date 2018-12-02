@@ -30,6 +30,9 @@ $row = mysqli_fetch_array($get_likes);
 $total_likes = $row['likes'];
 $user_liked = $row['added_by'];
 
+$user_details_query = mysqli_query($con, "SELECT * FROM users WHERE username = '$user_liked'");
+$row = mysqli_fetch_array($user_details_query);
+
 ?>
 
 
