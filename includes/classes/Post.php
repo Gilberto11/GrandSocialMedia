@@ -122,12 +122,17 @@ class Post {
 
                     <script>//show and hide comments on posts
                         function toggle<?php echo $id; ?>() {
-                            var element = document.getElementById("toggleComment<?php echo $id; ?>");
+                            var target = $(event.target);
+                            if(!target.is("a")){
+                                var element = document.getElementById("toggleComment<?php echo $id; ?>");
 
                             if (element.style.display == "block")
                                 element.style.display = "none";
                             else
                                 element.style.display = "block";
+
+                            }
+                            
                         }
                     </script>
 
