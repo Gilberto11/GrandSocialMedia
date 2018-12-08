@@ -13,6 +13,22 @@ if(isset($_GET['profile_username'])) {
 }
 
 
+if(isset($_POST['remove_friend'])) {
+	$user = new User($con, $userLoggedIn);
+	$user->removeFriend($username);
+}
+
+if(isset($_POST['add_friend'])) {
+	$user = new User($con, $userLoggedIn);
+	$user->sendRequest($username);
+}
+
+if(isset($_POST['respond_request'])) {
+	header("Location: requests.php");
+}
+
+
+
 ?>
 
 <style type="text/css">
@@ -33,7 +49,7 @@ if(isset($_GET['profile_username'])) {
 
 	</div>
 
-	<form action="<?php echo $username; ?>">
+	<form action="<?php echo $username; ?>" method="POST">
 		<?php
 		$profile_user_obj =new User($con, $username);
 		if($profile_user_obj->isClosed()) {
