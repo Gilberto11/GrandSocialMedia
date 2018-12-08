@@ -49,4 +49,11 @@ CREATE TABLE `grandsocialmedia`.`likes` (
 PRIMARY KEY (`id`)
 ) ENGINE = INNODB;
 
+CREATE TABLE `grandsocialmedia`.`friend_requests` ( 
+`id` INT NOT NULL AUTO_INCREMENT , 
+`user_to` VARCHAR(50) NOT NULL , 
+`user_from` VARCHAR(50) NOT NULL ,
+ PRIMARY KEY ('id')
+ )ENGINE = INNODB;
+
 SELECT * FROM users;
