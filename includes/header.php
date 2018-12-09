@@ -1,7 +1,6 @@
 <?php
 require 'config/config.php';
-//include("includes/classes/User.php");
-//include("includes/classes/Post.php");
+
 
 if (isset($_SESSION['username'])){
 	$userLoggedIn = $_SESSION['username']; // check if the user is logged in, if not the page will force the user to registration form
@@ -22,6 +21,8 @@ else{
   <!-- JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/GrandSocialMedia.js"></script>
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
